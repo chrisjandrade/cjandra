@@ -11,7 +11,7 @@ class App extends React.Component {
 				<div className="header">
 					<img className="my-image" src="/img/me.jpg"/>
 					Christopher J Andrade
-					<div className="sub-header">Centreville, VA &diams; chrisjandrade AT gmail com</div>
+					<div className="sub-header">Centreville, VA <i className="fa fa-circle"/> chrisjandrade AT gmail com</div>
 
 					<div className="links">
 						<a href="https://github.com/chrisjandrade" target="_blank">
