@@ -6,8 +6,8 @@ module.exports = function (config) {
 
 	app.use('/', express.static('public/'));
 
-	app.listen(config.SERVER_PORT, () => {
-		console.info(`Server is running on port ${config.SERVER_PORT}`);
-	});
-
+	app.listen(config.SERVER_PORT, '0.0.0.0');
+	console.info(`Server is running on port 0.0.0.0:${config.SERVER_PORT}`);
+		
+	return app;
 };

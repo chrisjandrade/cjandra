@@ -19,7 +19,12 @@ function spawnWorker() {
   });
 }
 
-if (!!NODE_ENV.match(/production/i)) {
+if (!!NODE_ENV.match(/development/i)) {
+  config.SERVER_PORT = config.DEV_SERVER_PORT;
+
+  App(config);
+  console.info(`Server is running in ${NODE_ENV} mode`);
+} else {
   config.SERVER_PORT = config.PROD_SERVER_PORT;
 
   if (cluster.isMaster) {
@@ -29,9 +34,4 @@ if (!!NODE_ENV.match(/production/i)) {
     App(config);
     console.info(`Server started worker ${cluster.worker.id}`);
   }
-} else {
-  config.SERVER_PORT = config.DEV_SERVER_PORT;
-
-  App(config);
-  console.info(`Server is running in ${NODE_ENV} mode`);
 }

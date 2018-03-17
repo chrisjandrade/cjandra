@@ -1,5 +1,5 @@
 
 module.exports = {
-	DEV_SERVER_PORT: 8080,
+	DEV_SERVER_PORT: 3000,
 	PROD_SERVER_PORT: 80
 };
