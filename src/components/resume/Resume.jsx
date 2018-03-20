@@ -11,7 +11,7 @@ export default class Resume extends React.Component {
 			<div className="resume-container">
 				<div className="header">
 					<img className="my-image" src="/img/me.jpg"/>
-					Chris J Andrade
+					Chris J <strong>Andrade</strong>
 					<div className="sub-header">Centreville, VA <i className="fa fa-circle"/> chrisjandrade AT gmail com</div>
 
 					<div className="links">

@@ -5,10 +5,39 @@ body {
 	padding: 0px 0px;
 	margin: 0px 0px;
 	font-family: Roboto, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 
 	.pull-right { float: right; }
 	.pull-left { float: left; }
+
+	.app-container {
+		.app-header {
+			background-color: #e1f5fe;
+			padding: 2px 10px;
+
+			.name {
+				display: inline-block;
+				color: #000;
+				font-size: 16px;
+			}
+
+			.navigation {
+				a {
+					color: #01579b;
+					text-decoration: none;
+					font-size: 12px;
+					font-weight: bold;
+					display: inline-block;
+					padding: 0px 3px;
+				}
+
+				a:nth-child(n+2) {
+					border-left: 1px dotted #01579b;
+					margin-left: 4px;
+				}
+			}
+		}
+	}
 }
 
 @import './components/resume/Resume';
