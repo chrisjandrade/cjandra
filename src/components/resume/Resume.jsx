@@ -40,7 +40,7 @@ export default class Resume extends React.Component {
 							<span className="company">Blue Ridge Dynamics, Inc.</span>
 							<span className="dates">Oct 2016 to Present</span>
 						</h3>
-						Works to support several DARPA projects, defense and commercial projects.  
+						Works to support several DARPA, defense and commercial projects.  
 
 						<ul>
 							<li>
