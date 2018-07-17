@@ -1,149 +1,186 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-import 'font-awesome/css/font-awesome.css';
+import { Card } from '@blueprintjs/core';
 
 export default class Resume extends React.Component {
-	
+
 	render() {
-
 		return (
-			<div className="resume-container">
-				<div className="header">
-					<img className="my-image" src="/img/me.jpg"/>
-					Chris J <strong>Andrade</strong>
-					<div className="sub-header">Centreville, VA <i className="fa fa-circle"/> chrisjandrade AT gmail com</div>
+			<Card className="resume">
+        <div className="header">
+          <h1>Chris John Andrade</h1>
+        </div>
+        <div className="body">
+          
+          <h2>Cleared Software Engineer &#9632; Web Development</h2>
+          <br/>
 
-					<div className="links">
-						<a href="https://github.com/chrisjandrade" target="_blank">
-							<i className="fa fa-github-square"/>
-						</a>
-						<a href="https://www.linkedin.com/in/chrisjandrade/" target="_blank">
-							<i className="fa fa-linkedin-square"/>
-						</a>
-					</div>
-				</div>
+          <p>
+          Experienced Software Engineer specialized in Web Development. I work primarily with Javascript developing
+          the user interface, but am able to work across the full development stack. Also have experience leading
+          teams, mentoring and I am a strong proponent of Agile Development Methodologies.
+          </p>
+          <b>Skills</b><br/>
 
-				<div className="summary section">
-					<h2>Summary</h2>
+          <div className="col-md-4">
+            <ul>
+              <li>Javascript, HTML, CSS, SCSS</li>
+              <li>ReactJS, JQuery, AngularJS, ExtJS, Backbone</li>
+              <li>NodeJS, Express, NAN</li>
+            </ul>
+          </div>
+          <div className="col-md-4">
+            <ul>
+              <li>Java, Spring, J2EE</li>
+              <li>C, C++, C#, Python, Perl, Bash</li>
+              <li>GIT, SVN, CVS</li>
+            </ul>
+          </div>
+          <div className="col-md-4">
+            <ul>
+                <li>Docker</li>
+                <li>Elastic Search</li>
+                <li>Mongo, MySQL, MariaDB</li>
+            </ul>
+          </div>
+          <div className="clearfix"/>
 
-					Software Engineering Professional focused primarily on web application development. 
-					Highly adaptable, Strong problem solving capabilities, has worked individually, on teams and in leadership capacities.   Well versed in the SCRUM agile development methodology,
-					and can also work the full stack as needed.
-				</div>
+          <h2>Experience</h2>
+          <br/>
 
-				<div className="experience section">
-					<h2>Experience</h2>
+          <h4>
+            Blue Ridge Dynamics &#9632; Fairfax, VA
+            <span className="pull-right">Oct 2016 to July 2018</span>
+          </h4>
+          <em>Senior Software Engineer</em>
+          <p>
+          Supported various DARPA research projects, government projects and commercial development efforts as the
+          only front-end developer for a small start-up company (less than 10 employees).
+          </p>
 
-					<div className="sub-section">
-						<h3>Senior Software Engineer 
-							<span className="company">Blue Ridge Dynamics, Inc.</span>
-							<span className="dates">Oct 2016 to Present</span>
-						</h3>
-						Works to support several DARPA, defense and commercial projects.  
+          <ul>
+            <li>
+              Developed project infrastructure using NodeJS and ReactJS for an application used for scheduling signal
+              communication resources.
+            </li>
+            <li>
+              Developed search infrastructure (Elastic Search) , user interface, visualizations, back-end, real time
+              multimedia transcoding server for Blue Lake . Blue Lake allowed Terabytes of data to be processed, analyzed
+              and triaged by analysts.
+            </li>
+            <li>
+              Developed the user-interface for various Darpa research efforts.
+            </li>
+            <li>
+              Introduced Book Club, and Brown Bag lunches for technical topics.
+            </li>
+            <li>
+              Created user-interface interview packet, and intern interview packet.
+            </li>
+          </ul>
 
-						<ul>
-							<li>
-								Key engineer responsible for the development of the Darpa Blue Lake application.  Blue Lake allows large volumes 
-								of data to be quickly analyzed and triaged.  Blue Lake can perform object detection, facial detection, speech,
-								noise, and music detection, reverse image search, reverse face search.  Responsible for development of the User Interface,
-								Elastic Search interface, and Sleuthkit Cellex analysis.
-							</li>
-							<li>
-								Developed the user interface for the Darpa Butler application.  Butler assists an analyst searching for an online entity, 
-								characterizes results using document topic modelling.  Created visualization of this document topic clustering, and profile 
-								extraction interface.
-							</li>
-							<li>
-								Developed the user interface for the Darpa QED application.  QED allows an entity to be matched with online personas for the purpose 
-								extracting potentially derogatory information.
-							</li>
-						</ul>
-					</div>
+          <h4>
+            Probity &#9632; Herndon, VA
+            <span className="pull-right">Oct 2015 to Oct 2016</span>
+          </h4>
+          <em>Senior Software Engineer SME</em>
+          <p>
+            The principle engineer responsible for developing <strong>Acacia</strong> an audio focused analytical tool. Worked converting
+            the legacy C# application to NodeJS and Node Native (NAN).
+          </p>
+          <ul>
+            <li>
+              Developed a faster than realtime audio pipeline which transcodes audio media to PCM16.
+            </li>
+            <li>
+              Developed C/C++ Node Native Addons to support USB foot pedal input, and perform audio stretch (tempo
+              adjustment without pitch distortion) using soundtouch.
+            </li>
+            <li>
+              Developed libraries for adjusting audio-gain on the fly, muting of individual audio channels, dual-mono audio
+              interleaving (combining 2 mono audio files into a single audio), and generating SVG images representing the
+              audio energy waveform.
+            </li>
+            <li>
+              Development was requested to be done with only Vanilla Javascript, so I authored a jQuery substitute
+              library.
+            </li>
+            <li>
+              Developed the user-interface for all Acacia products.
+            </li>
+            <li>
+              Integrated with voice activity detection and voice filtering libraries provided by a third party.
+            </li>
+          </ul>
 
-					<div className="sub-section">
-						<h3>Senior Software Engineer 
-							<span className="company">Probity LLC.</span>
-							<span className="dates">Oct 2015 to Oct 2016</span>
-						</h3>
-						The principal engineer responsible for converting the legacy Acacia Media Player application from C# to NW.js. 
-						Worked to create a faster than realtime audio pipeline and media visualization tool. This includes transcoding 
-						various media formats to PCM16, time-stretch (tempo adjustment without pitch distortion), audio-gain control, 
-						muting, audio interleaving, and energy waveform visualization. Worked to create a service wrapper for VAD/VF 
-						(Voice Activity Detection and Voice Filtering) command line tools, and integrated this service with the 
-						existing Acacia Desktop application. Currently working on the effort to migrate the Acacia Desktop application 
-						from C# to NW.js
-					</div>
+          <h4>
+            CACI/Six3Systems &#9632; Sterling, VA
+            <span className="pull-right">Jan 2014 to Oct 2015</span>
+          </h4>
+          <em>Development Lead</em>
+          <p>
+            Lead the DCTC Bedrock-Tasking Team. Our team was responsible for converting the legacy Ruby application.
+          </p>
+          <ul>
+            <li>Directed and focused the team’s development efforts.</li>
+            <li>Planned sprint releases and schedule.</li>
+            <li>Coordinated with other development leads on the overall Bedrock effort.</li>
+          </ul>
+          
+          <em>Software Engineer</em>
+          <ul>
+            <li>Developed pluggable architecture for Advanced Search in the Bedrock Application.</li>
+            <li>Developed Role-based access control for Taskers application.</li>
+            <li>Developed initialization and error handling framework for the user interface.</li>
+            <li>Introduced Karma and Jasmine unit testing into the applications.</li>
+          </ul>
 
-					<div className="sub-section">
-						<h3>Lead Developer 
-							<span className="company">Six3 - CACI</span>
-							<span className="dates">Jul 2015 to Oct 2015</span>
-						</h3>
-						Development lead for DCTC Bedrock-Tasking team. Works directing the team development effort, and 
-						coordinating with other DCTC Bedrock Projects. Currently leading the effort to convert the legacy 
-						Ruby application to the new micro-service and angular architecture.
-					</div>
+          <h4>
+            NISC - IBM Global Business Systems &#9632; Fairfax, VA
+            <span className="pull-right">Jan 2009 to Jan 2014</span>
+          </h4>
+          <em>UI Development Lead</em>
+          <p>
+            Lead development effort for user interface across the LATCH family of products. LATCH was an audio
+            transcription tool used to allow analysts to quickly triage multimedia.
+          </p>
 
-					<div className="sub-section">
-						<h3>Software Engineer 
-							<span className="company">Six3 - CACI</span>
-							<span className="dates">Jan 2014 - Jul 2015</span>
-						</h3>
-						Key contributor to the DCTC Bedrock Program, working across multiple missions primarily with Angular JS, and NodeJS.
-						<ul>
-							<li>Developed pluggable architecture for Advanced Search capability using Elastic Search.</li>
-							<li>Developed user authentication, session management, and role based access control.</li>
-							<li>Developed initialization and error handling framework for the UI.</li>
-							<li>Introduced the majority of the Karma – Jasmine unit-testing coverage into the projects.</li>
-							<li>Key contributor to the TASKERS project across the full stack, from end-to-end.</li>
-						</ul>
-					</div>
+          <ul>
+            <li>Conducted code reviews for user interface related development.</li>
+            <li>Developed and enforced user interface best practices.</li>
+            <li>Developed visualizations for human language analytics, pattern of life, and user meta-data.</li>
+            <li>Developed framework for synchronizing a large set of data and metadata by time (10,000+ items) .</li>
+            <li>Introduced Jasmine unit testing.</li>
+            <li>Presenter for GBS Technical Book Club. Presented on the topics of usability, basic/advanced Javascript.</li>
+          </ul>
+          
+          <h4>
+            PowerTest - Verizon &#9632; Reston, VA
+            <span className="pull-right">Feb 2007 to Mar 2010</span>
+          </h4>
+          <em>Software Engineer</em>
+          <p>
+            Supported the Verizon CPE/CNT laboratory in development related efforts.
+          </p>
+          
+          <ul>
+            <li>Developed a platform for performance testing of Verizon supported devices.</li>
+            <li>Developed inventory management web application integrated with WASP.</li>
+          </ul>
 
-					<div className="sub-section">
-						<h3>UI Technical Lead 
-							<span className="company">IBM</span>
-							<span className="dates">Dec 2009 to Jan 2014</span>
-						</h3>
-						Software Engineer leading the development effort on front-end/UI.
-						<ul>
-							<li>Conducted code-reviews, and enforced/developed best practices across the LATCH front-end.</li>
-							<li>Designed and developed mechanisms for Visualizing customer meta-data in a meaningful way.</li>
-							<li>Used Raphael to visualize HLT (human language tools) data in an audio wave-form.</li>
-							<li>Used Raphael to display pattern-of-life for data gathered across a span of time.</li>
-							<li>Used Pixastic to allow for browser-side image enhancement.</li>
-							<li>Developed framework to sync a large amount of data and meta-data across a time-line.</li>
-							<li>Syncing GEO-location to a specific point in time (previously visited locations, and current known location) with Open Layers.</li>
-							<li>Syncing AUDIO, VIDEO and IMAGE data and meta-data to a specific point in time.</li>
-							<li>Developed mission time-line playback capability for a pool of AUDIO, VIDEO, IMAGE and GEO-POINT data in a time-line.</li>
-							<li>Re-factored Data Management system for loading a large store of data into the browser.</li>
-							<li>Solidified jasmine unit-testing.</li>
-							<li>Frequent presenter for GBS technical book club: Presented on usability, basic & advanced JavaScript</li>
-						</ul>
-					</div>
+          <h3>Education</h3>
+          <h4>George Mason University</h4>
+          
+          <em><strong>Master of Science</strong>, Computer Science</em><span className="pull-right">2007 to 2012</span>
+          <div className="clearfix"/>
 
-					<div className="sub-section">
-						<h3>Solutions Developer 
-							<span className="company">Powertest - Verizon</span>
-							<span className="dates">Feb 2007 to Mar 2010</span>
-						</h3>
-						Solution provider for the Verizon Testing Lab.
-						<ul>
-							<li>Developed a platform for automated end-to-end configuration and testing of a network.</li>
-							<li>Provisioning and Configuring the Edge Router (WAN Side configuration)</li>
-							<li>Includes provisioning and configuration of prototype MOCA switches.</li>
-							<li>Provisioning and Configuring the Customer Route (LAN Side configuration)</li>
-							<li>Configuring the Operating System for testing.</li>
-							<li>Latency and Throughput Testing through FTP.</li>
-							<li>Security Analysis with NESSUS.</li>
-							<li>Performance Testing using OOKLA.</li>
-							<li>Developed application for analyzing performance of a WIFI system with signal attenuation / degradation simulation.</li>
-							<li>Developed application integrated with WASP for laboratory equipment inventory and management.</li>
-						</ul>
-					</div>
-				</div>
+          <em><strong>Graduate Certificate</strong>, Web Based Software Engineering</em><span className="pull-right">2007 to 2012</span>
+          <div className="clearfix"/>
 
-			</div>
+          <em><strong>Bachelor of Science</strong>, Computer Science</em><span className="pull-right">2002 to 2006</span>
+          <div className="clearfix"/>
+          
+        </div>
+			</Card>
 		);
 	}
 
