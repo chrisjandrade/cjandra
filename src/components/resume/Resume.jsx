@@ -48,6 +48,15 @@ export default class Resume extends React.Component {
           <br/>
 
           <h4>
+            Technology Management Associates &#9632; Chantilly, VA
+            <span className="pull-right">Aug 2018 to Present</span>
+          </h4>
+          <em>Software Engineer</em>
+          <p>
+            My newest expedition is just getting started...
+          </p>
+
+          <h4>
             Blue Ridge Dynamics &#9632; Fairfax, VA
             <span className="pull-right">Oct 2016 to July 2018</span>
           </h4>
